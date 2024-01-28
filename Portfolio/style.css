@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+.logo span {
+    color: #007bff;
+}
+.navigation {
+    margin-left: -300px;
+}
+.navigation a {
+    font-size: 1.1em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: .3s;
+}
+.navigation a:hover {
+    color: #007bff;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+.profile-image {
+    width: 800px; /* Adjust the width as needed */
+    height: auto;
+    float: right; /* Float the image to the left */
+    margin-left: 10px; /* Add some margin for spacing */
+    
+}
+
+
+.content {
+    max-width: 500px;
+    color: #555;
+}
+.content h2 {
+    font-size: 2em;
+}
+.content h2 span {
+    color:#007bff;
+}
+.content h4 {
+    font-size: 2em;
+}
+.content p {
+    padding: 10px 0 40px 0;
+}
+.btn-group a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #007bff;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-group a:hover:nth-child(1) {
+    color: #007bff;
+    background: transparent;
+}
+.btn-group a:nth-child(2) {
+    color: #007bff;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+.btn-group a:hover:nth-child(2) {
+    color: #fff;
+    background: #007bff;
+}
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #007bff;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #007bff;
+    transition: .3s;
+}
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+.social-icons a i {
+    color: #fff;
+}
+/* About Section */
+
+.about {
+    
+    padding: 80px 100px;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* Add these styles to your existing stylesheet or create a new one */
+
+#right {
+    text-align: center;
+}
+
+.about .imgBorder {
+    border: 2px solid #007bff; /* Set border color */
+    padding: 10px;
+}
+
+.about .main-image {
+    max-height: 500px; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space beneath the image */
+}
+
+
+  
+
+/* Education Section */
+
+
+/* Updated CSS for the Education section */
+
+.education {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.education-row {
+    display: flex;
+    justify-content: space-around; /* Adjusted to evenly distribute items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.education-item {
+    width: 30%;
+    margin: 0 1.5%;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 20px;
+    position: relative; /* Added position relative for absolute positioning of hover shadow */
+    overflow: hidden; /* Hide overflow to prevent hover shadow from leaking */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
+}
+
+.education-item:hover {
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.5); /* Blue static hover shadow */
+}
+
+.education-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff; /* Blue color for headings */
+}
+
+.education-item p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .education-item {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+/* Projects Section */
+/* Add this CSS for the Projects section */
+
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#projects {
+    background-color: #f4f4f4; /* Set background color */
+    padding: 50px 0; /* Add padding to the section */
+    text-align: center;
+}
+
+
+
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333; /* Darken heading color for better readability */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Uppercase text for a bold look */
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+    height: 3px;
+    background-color: #007BFF; /* Blue underline */
+    border-radius: 2px; /* Rounded corners */
+}
+
+
+.project-heading {
+    font-size: 36px; /* Increase font size for the heading */
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333; /* Darken heading color for better readability */
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line on smaller screens */
+}
+
+.project-item {
+    width: 30%; /* Set width for each project item */
+    height: 100%; /* Set fixed height for equal shadow boxes */
+    margin: 0 1.5% 20px; /* Add margin between project items and rows */
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fff; /* Set project item background color */
+    padding: 20px; /* Add padding to project item */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 128, 255, 0.1); /* Updated blue shadow effect */
+    text-align: left; /* Align text to the left */
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for box-shadow */
+}
+
+.project-item h3 {
+    font-size: 22px; /* Slightly reduce font size for project titles */
+    margin-bottom: 12px; /* Increase margin-bottom for better spacing */
+}
+
+.project-item p {
+    font-size: 15px; /* Slightly reduce font size for project descriptions */
+    color: #666;
+    line-height: 1.5; /* Improve line height for better readability */
+}
+
+.view-project {
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff; /* White font color */
+    background-color: #007BFF; /* Blue background color */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.view-project:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add hover effect to project items */
+.project-item:hover {
+    box-shadow: 0 0 30px rgba(0, 128, 255, 0.3); /* Enhance shadow on hover */
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 12px; /* Adjust margin for spacing */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%; /* Full width for smaller screens */
+        margin: 0 0 20px; /* Adjust margin for smaller screens */
+    }
+}
+
+
+
+/* Skills section */
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 123, 255, 0.3); /* Apply blue static shadow */
+    padding: 20px;
+    margin: 10px;
+}
+
+
+/* Contacts section */
+/* Contacts section */
+.contact {
+    margin-top: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: 1.5rem; /* Replace var(--bottom-margin-2) with a specific value */
+  }
+  
+  .contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form-container label {
+    line-height: 2.7em;
+    font-weight: bold; /* Replace var(--bold-font) with 'bold' */
+    color: #007BFF; /* Replace var(--primary-color) with specific color */
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 2px outset #007BFF; /* Replace var(--primary-color) with specific color */
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: #007BFF; /* Replace var(--primary-color) with specific color */
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid #007BFF; /* Replace var(--primary-color) with specific color */
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold; /* Replace var(--bold-font) with 'bold' */
+    transition: 0.3s; /* Replace var(--transition) with specific transition duration */
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #007BFF; /* Replace var(--primary-color) with specific color */
+    border: 2px solid #007BFF; /* Replace var(--primary-color) with specific color */
+  }
+  /* Footer */
+
+  .footer {
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2px;
+    
+    bottom: 0;
+    width: 100%;
+}
+  
